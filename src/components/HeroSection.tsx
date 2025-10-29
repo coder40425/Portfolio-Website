@@ -190,7 +190,7 @@ export function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-blue-600 rounded-2xl"></div>
                 <div className="absolute inset-1 bg-[#0D0D0F] rounded-2xl overflow-hidden">
                   <ImageWithFallback
-                    src="public/pp.jpg"
+                    src="/pp.jpg"
                     alt="Yash Kumar Singh"
                     className="w-full h-full object-cover"
                   />
