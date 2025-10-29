@@ -7,23 +7,43 @@ import { useState, useEffect } from 'react';
 export function HeroSection() {
   // Typewriter effect for the subtitle
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = "Aspiring Software Developer | Full-Stack & DSA Enthusiast";
+  const [welcomeText, setWelcomeText] = useState('');
   
+  const fullText = "Aspiring Software Developer | Full-Stack & DSA Enthusiast";
+  const fullWelcome = "Welcome To My Portfolio...!";
+
+  // Typewriter for welcome text
   useEffect(() => {
-    let index = 0;
+    let i = 0;
     const timer = setInterval(() => {
-      if (index <= fullText.length) {
-        setDisplayedText(fullText.slice(0, index));
-        index++;
+      if (i <= fullWelcome.length) {
+        setWelcomeText(fullWelcome.slice(0, i));
+        i++;
       } else {
         clearInterval(timer);
       }
-    }, 50);
-    
+    }, 60);
     return () => clearInterval(timer);
   }, []);
 
-  // Smooth scroll to sections
+  // Typewriter for subtitle (starts after welcome completes)
+  useEffect(() => {
+    let index = 0;
+    const delay = fullWelcome.length * 60 + 400; // delay subtitle start
+    const startTyping = setTimeout(() => {
+      const timer = setInterval(() => {
+        if (index <= fullText.length) {
+          setDisplayedText(fullText.slice(0, index));
+          index++;
+        } else {
+          clearInterval(timer);
+        }
+      }, 50);
+    }, delay);
+    return () => clearTimeout(startTyping);
+  }, []);
+
+  // Smooth scroll
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -31,9 +51,8 @@ export function HeroSection() {
     }
   };
 
-  // Handle resume download
+  // Resume download
   const handleDownloadResume = () => {
-    // Replace with your actual resume URL
     const resumeUrl = '/resume.pdf';
     const link = document.createElement('a');
     link.href = resumeUrl;
@@ -46,7 +65,21 @@ export function HeroSection() {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-transparent py-12 md:py-20 px-4 md:px-6">
       <div className="container mx-auto max-w-7xl z-10">
+        {/* Welcome text at the very top center */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-8 md:mb-12"
+        >
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-purple-300 font-bold tracking-wide">
+            {welcomeText}
+            {welcomeText.length < fullWelcome.length && <span className="animate-pulse">|</span>}
+          </h2>
+        </motion.div>
+
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          
           {/* Left: Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -77,7 +110,7 @@ export function HeroSection() {
               </p>
               <div className="text-base md:text-lg text-gray-400 min-h-[28px]">
                 {displayedText}
-                <span className="animate-pulse">|</span>
+                {displayedText.length < fullText.length && <span className="animate-pulse">|</span>}
               </div>
             </motion.div>
 
@@ -150,23 +183,20 @@ export function HeroSection() {
             className="flex justify-center md:justify-end order-1 md:order-2"
           >
             <div className="relative">
-              {/* Decorative elements */}
               <div className="absolute -inset-4 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-2xl blur-2xl"></div>
               <div className="absolute -inset-2 bg-gradient-to-br from-purple-500/10 to-blue-500/10 rounded-2xl"></div>
               
-              {/* Photo container - Responsive sizing */}
               <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96">
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-blue-600 rounded-2xl"></div>
                 <div className="absolute inset-1 bg-[#0D0D0F] rounded-2xl overflow-hidden">
                   <ImageWithFallback
-                    src="/pp.jpg"
+                    src="public/pp.jpg"
                     alt="Yash Kumar Singh"
                     className="w-full h-full object-cover"
                   />
                 </div>
               </div>
 
-              {/* Floating badge - Responsive */}
               <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -179,7 +209,7 @@ export function HeroSection() {
           </motion.div>
         </div>
 
-        {/* Animated scroll indicator */}
+        {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
