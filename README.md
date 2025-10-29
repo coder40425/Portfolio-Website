@@ -1,7 +1,7 @@
 
-  # Futuristic Portfolio Website
+  # My Portfolio Website
 
-  This is a code bundle for Futuristic Portfolio Website. The original project is available at https://www.figma.com/design/ffdT2dLWBUoyVD3xP8yiB6/Futuristic-Portfolio-Website.
+  This is a code bundle for My Portfolio Website.
 
   ## Running the code
 
