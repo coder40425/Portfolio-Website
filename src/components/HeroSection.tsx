@@ -53,7 +53,7 @@ export function HeroSection() {
 
   // Resume download
   const handleDownloadResume = () => {
-    const resumeUrl = '/resume.pdf';
+    const resumeUrl = '/Yash_Kumar_Singh_Resume.pdf';
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'Yash_Kumar_Singh_Resume.pdf';
