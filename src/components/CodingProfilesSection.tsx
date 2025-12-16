@@ -6,14 +6,14 @@ export function CodingProfilesSection() {
   const platforms = [
     {
       name: 'LeetCode',
-      mainStat: '165+',
+      mainStat: '180+',
       mainLabel: 'Problems Solved',
       link: 'https://leetcode.com/u/coderx404/',
       gradient: 'from-orange-500 to-yellow-500',
       icon: Code2,
       stats: [
-        { label: 'Questions Solved', value: '165+' },
-        { label: 'Days Active', value: '95+' }
+        { label: 'Questions Solved', value: '180+' },
+        { label: 'Days Active', value: '100+' }
       ]
     },
     // {
