@@ -6,7 +6,7 @@ export function CodingProfilesSection() {
   const platforms = [
     {
       name: 'LeetCode',
-      mainStat: '180+',
+      mainStat: '200+',
       mainLabel: 'Problems Solved',
       link: 'https://leetcode.com/u/coderx404/',
       gradient: 'from-orange-500 to-yellow-500',
