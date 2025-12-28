@@ -12,7 +12,7 @@ export function CodingProfilesSection() {
       gradient: 'from-orange-500 to-yellow-500',
       icon: Code2,
       stats: [
-        { label: 'Questions Solved', value: '180+' },
+        { label: 'Questions Solved', value: '200+' },
         { label: 'Days Active', value: '100+' }
       ]
     },
