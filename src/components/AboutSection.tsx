@@ -146,43 +146,11 @@ export function AboutSection() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 items-start">
-          {/* About Card */}
+          {/* Timeline */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8 }}
-          >
-            <Card className="bg-white/5 backdrop-blur-sm border border-white/10 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-6">
-                  <Rocket className="h-8 w-8 text-purple-400 mr-3" />
-                  <h3 className="text-2xl text-white">My Journey</h3>
-                </div>
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  I'm a passionate 2nd-year student at NIT Durgapur with a deep love for technology and programming. My heart lies in software development and building innovative solutions.
-                </p>
-                <p className="text-gray-300 leading-relaxed">
-                  I spend my time building full-stack applications, solving DSA problems, and exploring the latest technologies in web development. My goal is to become a skilled Software Development Engineer and contribute to innovative projects.
-                </p>
-                <motion.div 
-                  className="mt-6 p-4 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <p className="text-blue-400">Fun Fact:</p>
-                  <p className="text-sm text-gray-300 mt-1">
-                    My friends absolutely love using my Expense Splitter App! 💯 It's made splitting bills so much easier for our group.
-                  </p>
-                </motion.div>
-              </CardContent>
-            </Card>
-          </motion.div>
-
-          {/* Timeline */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-6"
           >
             <h3 className="text-2xl mb-8 text-center md:text-left text-white">Education & Milestones</h3>
@@ -244,6 +212,38 @@ export function AboutSection() {
                 );
               })}
             </motion.div>
+          </motion.div>
+
+          {/* About Card */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <Card className="bg-white/5 backdrop-blur-sm border border-white/10 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-6">
+                  <Rocket className="h-8 w-8 text-purple-400 mr-3" />
+                  <h3 className="text-2xl text-white">My Journey</h3>
+                </div>
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  I'm a 2nd-year student at NIT Durgapur working as a Full-Stack Developer Intern at Techxica Technology. I build scalable web applications and solve complex problems through code.
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                  My work spans the entire stack—from crafting intuitive React interfaces to designing robust Node.js backends. When I'm not coding for work, you'll find me grinding LeetCode or experimenting with new tech.
+                </p>
+                <motion.div 
+                  className="mt-6 p-4 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <p className="text-blue-400">Fun Fact:</p>
+                  <p className="text-sm text-gray-300 mt-1">
+                    My friends absolutely love using my Expense Splitter App! 💯 It's made splitting bills so much easier for our group.
+                  </p>
+                </motion.div>
+              </CardContent>
+            </Card>
           </motion.div>
         </div>
       </div>
