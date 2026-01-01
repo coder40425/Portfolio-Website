@@ -9,7 +9,7 @@ const timelineData = [
     year: '2024 - 2028',
     title: 'NIT Durgapur',
     institution: 'Bachelor of Technology',
-   // description: 'CGPA: 7.42',
+    description: 'Relevant Coursework: Data Structures & Algorithms, Computer Programming',
     icon: GraduationCap
   },
   {
@@ -74,7 +74,7 @@ export function AboutSection() {
         >
           <h2 className="text-4xl md:text-5xl mb-6 text-white">About Me</h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Building impactful web applications and optimizing user experiences
+            Full-stack developer crafting scalable web solutions and solving complex problems 🚀
           </p>
         </motion.div>
 
@@ -85,7 +85,7 @@ export function AboutSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-16"
         >
-          <h3 className="text-4xl mb-8 text-center text-white">Experience</h3>
+          <h3 className="text-3xl mb-8 text-center text-white">Experience</h3>
           
           <motion.div
             variants={containerVariants}
