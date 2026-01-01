@@ -45,7 +45,7 @@ export function CodingProfilesSection() {
               <Target className="w-8 h-8 text-white" />
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl mb-6 text-white">Competitive Programming</h2>
+          <h2 className="text-4xl md:text-5xl mb-6 text-white">Programming</h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Consistent problem-solving and algorithmic thinking across multiple platforms
           </p>
