@@ -32,7 +32,7 @@ export function Footer() {
           
           <div className="text-sm text-muted-foreground space-y-2">
             <p>© 2025 Yash Kumar Singh. All rights reserved.</p>
-            <p>2nd-year Chemical Engineering Student at NIT Durgapur</p>
+            <p>2nd-year Student at NIT Durgapur</p>
             <p className="text-xs opacity-75">
               Designed with glassmorphism effects and futuristic aesthetics
             </p>
