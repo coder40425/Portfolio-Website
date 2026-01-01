@@ -12,11 +12,19 @@ import {
   BookOpen,
   Layers,
   Activity,
-  Lock
+  Lock,
+  Container,
+  Terminal,
+  Cloud,
+  Wrench
 } from 'lucide-react';
 
 export function SkillsSection() {
   const skills = [
+    { name: 'JavaScript', color: 'from-yellow-500 to-orange-500', icon: Code2 },
+    { name: 'TypeScript', color: 'from-blue-600 to-indigo-600', icon: FileType },
+    { name: 'C', color: 'from-blue-400 to-blue-500', icon: Code2 },
+    { name: 'C++', color: 'from-blue-500 to-blue-600', icon: Code2 },
     { name: 'React.js', color: 'from-cyan-400 to-blue-500', icon: Globe },
     { name: 'Next.js', color: 'from-gray-800 to-black', icon: Zap },
     { name: 'Tailwind CSS', color: 'from-teal-400 to-cyan-500', icon: Palette },
@@ -25,43 +33,52 @@ export function SkillsSection() {
     { name: 'Express.js', color: 'from-gray-600 to-gray-700', icon: Server },
     { name: 'Socket.io', color: 'from-gray-700 to-black', icon: Activity },
     { name: 'MongoDB', color: 'from-green-600 to-teal-600', icon: Database },
+    { name: 'MySQL', color: 'from-blue-500 to-blue-600', icon: Database },
+    { name: 'Redis', color: 'from-red-600 to-red-700', icon: Database },
     { name: 'NextAuth.js', color: 'from-indigo-600 to-purple-600', icon: Lock },
-    { name: 'JavaScript', color: 'from-yellow-500 to-orange-500', icon: Code2 },
-    { name: 'TypeScript', color: 'from-blue-600 to-indigo-600', icon: FileType },
-    { name: 'C++', color: 'from-blue-500 to-blue-600', icon: Code2 },
-    { name: 'Data Structures & Algorithms', color: 'from-purple-500 to-purple-600', icon: BookOpen },
-    { name: 'Git & GitHub', color: 'from-gray-700 to-gray-800', icon: Github }
+    { name: 'Clerk', color: 'from-purple-500 to-indigo-500', icon: Lock },
+    { name: 'Docker', color: 'from-blue-400 to-blue-600', icon: Container },
+    { name: 'Git & GitHub', color: 'from-gray-700 to-gray-800', icon: Github },
+    { name: 'Linux', color: 'from-orange-500 to-yellow-500', icon: Terminal },
+    { name: 'DSA', color: 'from-purple-500 to-purple-600', icon: BookOpen },
+    { name: 'OOP', color: 'from-indigo-500 to-purple-500', icon: Code2 }
   ];
 
   const skillCategories = [
     {
-      title: 'Frontend Development',
+      title: 'Languages',
+      skills: ['JavaScript (ES6+)', 'TypeScript', 'C', 'C++'],
+      icon: Code2,
+      gradient: 'from-yellow-500 to-orange-500'
+    },
+    {
+      title: 'Frontend',
       skills: ['React.js', 'Next.js', 'Tailwind CSS', 'Redux'],
       icon: Palette,
       gradient: 'from-cyan-500 to-blue-500'
     },
     {
-      title: 'Backend Development',
-      skills: ['Node.js', 'Express.js', 'Socket.io'],
+      title: 'Backend',
+      skills: ['Node.js', 'Express.js', 'REST APIs', 'WebSockets', 'Socket.io'],
       icon: Server,
       gradient: 'from-green-500 to-emerald-600'
     },
     {
-      title: 'Database & Auth',
-      skills: ['MongoDB', 'NextAuth.js', 'JWT'],
+      title: 'Databases & Auth',
+      skills: ['MongoDB', 'MySQL', 'Redis', 'JWT', 'NextAuth.js', 'Clerk'],
       icon: Database,
       gradient: 'from-teal-500 to-green-600'
     },
     {
-      title: 'Programming',
-      skills: ['JavaScript', 'TypeScript', 'C++', 'Data Structures & Algorithms'],
-      icon: Code2,
+      title: 'Core CS',
+      skills: ['Data Structures & Algorithms', 'OOP', 'DBMS', 'Operating Systems'],
+      icon: BookOpen,
       gradient: 'from-purple-500 to-indigo-600'
     },
     {
-      title: 'Tools & Workflow',
-      skills: ['Git & GitHub', 'VS Code', 'Postman'],
-      icon: Cpu,
+      title: 'DevOps & Tools',
+      skills: ['Docker', 'Git & GitHub', 'CI/CD', 'Linux', 'Postman', 'Vercel', 'Figma'],
+      icon: Wrench,
       gradient: 'from-orange-500 to-red-500'
     }
   ];
