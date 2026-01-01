@@ -28,6 +28,14 @@ export function ProjectsSection() {
       githubUrl: 'https://github.com/coder40425/Expense-Splitter-App'
     },
     {
+      title: 'LRU Cache Implementation',
+      description: 'Implemented memory-efficient LRU Cache with O(1) get/put operations using hash maps and custom doubly linked lists. Designed automatic eviction policy reflecting real-world cache systems used in browsers and databases with OOP principles and efficient memory management.',
+      image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80',
+      tags: ['C++', 'STL', 'Hash Maps', 'Doubly Linked Lists', 'OOP', 'DSA'],
+      liveUrl: null,
+      githubUrl: 'https://github.com/coder40425/30-DAYS-CPP-OOPS-STL-PRACTICE/blob/main/day29.cpp'
+    },
+    {
       title: 'Secure Notes App',
       description: 'A secure notes management platform enabling users to create, edit, and delete personal notes with user-specific access control. Implements robust JWT authentication and bcrypt password hashing to ensure privacy and protect user credentials.',
       image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80',
