@@ -153,7 +153,7 @@ export function AboutSection() {
             transition={{ duration: 0.8 }}
             className="space-y-6"
           >
-            <h3 className="text-2xl mb-8 text-center md:text-left text-white">Education & Milestones</h3>
+            <h3 className="text-2xl mb-8 text-center md:text-left text-white">Education</h3>
             
             <motion.div
               variants={containerVariants}
