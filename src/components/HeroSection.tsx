@@ -9,7 +9,7 @@ export function HeroSection() {
   const [displayedText, setDisplayedText] = useState('');
   const [welcomeText, setWelcomeText] = useState('');
   
-  const fullText = "Aspiring Software Developer | Full-Stack & DSA Enthusiast";
+  const fullText = "Full-Stack Developer | Building Scalable Web Solutions";
   const fullWelcome = "Welcome To My Portfolio...!";
 
   // Typewriter for welcome text
