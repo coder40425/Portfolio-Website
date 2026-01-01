@@ -230,7 +230,7 @@ export function AboutSection() {
                   I'm a 2nd-year student at NIT Durgapur specializing in full-stack development. I build scalable web applications and solve complex problems through code, turning ideas into production-ready solutions.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
-                  My work spans the entire stack—from crafting intuitive React interfaces to designing robust Node.js backends. When I'm not building projects, you'll find me grinding LeetCode or experimenting with new technologies.
+                  My work spans the entire stack from crafting intuitive React interfaces to designing robust Node.js backends. When I'm not building projects, you'll find me grinding LeetCode or experimenting with new technologies.
                 </p>
                 <motion.div 
                   className="mt-6 p-4 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10"
