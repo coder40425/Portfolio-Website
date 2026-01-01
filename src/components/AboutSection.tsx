@@ -9,7 +9,7 @@ const timelineData = [
     year: '2024 - 2028',
     title: 'NIT Durgapur',
     institution: 'Bachelor of Technology',
-    description: 'Relevant Coursework: Data Structures & Algorithms, Computer Programming',
+    description: 'Relevant Coursework: Data Structures & Algorithms, Computer Programming, Object-Oriented Programming',
     icon: GraduationCap
   },
   {
