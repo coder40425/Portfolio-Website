@@ -24,16 +24,45 @@ const timelineData = [
 // Experience data
 const experienceData = [
   {
-    year: 'Nov 2025 - Present',
+    year: 'Jan 2026 - Present',
+    title: 'Backend Developer Intern',
+    company: 'MezZingo',
+    location: 'Remote (Bengaluru, India)',
+    icon: Briefcase,
+    achievements: [
+      'Working on backend services using Python and Flask for scalable web applications',
+      'Developing and maintaining RESTful APIs with focus on performance and reliability',
+      'Collaborating with cross-functional teams to deliver production-ready features'
+    ],
+    techStack: ['Python', 'Flask']
+  },
+  {
+    year: 'Jan 2026',
+    title: 'Software Developer Intern (Backend)',
+    company: 'Maity Innovations Pvt. Ltd.',
+    location: 'On-site, Durgapur, India',
+    icon: Briefcase,
+    achievements: [
+      'Collaborated with senior developers on a production-grade e-commerce backend in agile development cycles',
+      'Engineered cart and coupon engine handling 10+ validation rules with strict inventory consistency checks',
+      'Implemented MongoDB transactions to ensure atomic coupon redemption, eliminating duplicate usage',
+      'Developed and tested 20+ RESTful APIs and resolved critical authentication bugs, reducing 500 errors by ~40%'
+    ],
+    techStack: ['Node.js', 'TypeScript', 'Express.js', 'MongoDB', 'MySQL']
+  },
+  {
+    year: 'Nov 2025 - Jan 2026',
     title: 'Full Stack Developer Intern',
     company: 'Techxica Technology Pvt. Ltd.',
     location: 'Remote',
     icon: Briefcase,
     achievements: [
-      'Built e-commerce product management for 40+ products, admin workflows, and payment gateway integration',
-      'Redesigned company website using React, Tailwind CSS, and REST APIs, reducing load time by ~25%',
-      'Maintained clean codebases through Git workflows, PR reviews, and collaborative development practices'
-    ]
+      'Built a product management system managing 40+ products with admin dashboard and Razorpay integration',
+      'Redesigned company website using React and Tailwind CSS, improving responsiveness and reducing page load time by ~25%',
+      'Resolved payment gateway issues ensuring reliable transactions and 100% successful webhook verification',
+      'Optimized database queries and API responses, improving overall application performance by ~20%'
+    ],
+    techStack: ['React.js', 'TypeScript', 'Node.js', 'MongoDB', 'Tailwind CSS']
   }
 ];
 
