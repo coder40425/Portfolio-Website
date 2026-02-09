@@ -53,10 +53,10 @@ export function HeroSection() {
 
   // Resume download
   const handleDownloadResume = () => {
-    const resumeUrl = '/Yash_Resume.pdf';
+    const resumeUrl = '/Resume_Yash.pdf';
     const link = document.createElement('a');
     link.href = resumeUrl;
-    link.download = 'Yash_SDE_Resume.pdf';
+    link.download = 'Resume_Yash.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
