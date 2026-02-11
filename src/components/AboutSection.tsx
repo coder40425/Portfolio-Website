@@ -30,11 +30,12 @@ const experienceData = [
     location: 'Remote (Bengaluru, India)',
     icon: Briefcase,
     achievements: [
-      'Working on backend services using Python and Flask for scalable web applications',
-      'Developing and maintaining RESTful APIs with focus on performance and reliability',
-      'Collaborating with cross-functional teams to deliver production-ready features'
+      'Deploying scalable Cloud Run backend services using Python and Flask for production systems',
+      'Built RESTful APIs for subscription workflows and automated background job processing',
+      'Optimized Firestore queries and batch operations, reducing API latency by ∼ 30%',
+      'Improved backend reliability with structured error handling and logging, reducing failures by ∼ 25%'
     ],
-    techStack: ['Python', 'Flask']
+    techStack: ['Python', 'Flask', 'Firebase', 'Google Cloud Platform (GCP),]
   },
   {
     year: 'Jan 2026',
