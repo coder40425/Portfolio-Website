@@ -35,7 +35,7 @@ const experienceData = [
       'Optimized Firestore queries and batch operations, reducing API latency by ∼ 30%',
       'Improved backend reliability with structured error handling and logging, reducing failures by ∼ 25%'
     ],
-    techStack: ['Python', 'Flask', 'Firebase', 'Google Cloud Platform (GCP),]
+    techStack: ['Python', 'Flask', 'Firebase', 'Google Cloud Platform (GCP)']
   },
   {
     year: 'Jan 2026',
