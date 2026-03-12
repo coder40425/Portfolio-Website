@@ -12,6 +12,14 @@ export function ProjectsSection() {
 
   const projects = [
     {
+    title: 'OpsTrack API',
+    description: 'A scalable role-based task management backend demonstrating production-grade architecture with caching, background job processing, and observability. Built secure RBAC APIs with Redis caching, BullMQ job queues, and Prometheus metrics with Grafana dashboards.',
+    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
+    tags: ['Node.js', 'TypeScript', 'Express.js', 'MongoDB', 'Redis', 'BullMQ', 'Prometheus', 'Grafana', 'Docker', 'Swagger'],
+    liveUrl: null,
+    githubUrl: 'https://github.com/coder40425/OpsTrack-API'
+ },
+    {
       title: 'BudgetTracker AI',
       description: 'An intelligent personal finance tracker that analyzes, visualizes, and manages expenses with AI integration. Features AI-powered insights using OpenRouter API, automating ~90% of manual expense categorization with smart analytics dashboards.',
       image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80',
