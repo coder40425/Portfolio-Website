@@ -30,29 +30,16 @@ const experienceData = [
     location: 'Remote (Bengaluru, India)',
     icon: Briefcase,
     achievements: [
-      'Deploying scalable Cloud Run backend services using Python and Flask for production systems',
-      'Built RESTful APIs for subscription workflows and automated background job processing',
-      'Optimized Firestore queries and batch operations, reducing API latency by ∼ 30%',
-      'Improved backend reliability with structured error handling and logging, reducing failures by ∼ 25%'
+      'Designed and deployed scalable Cloud Run backend services using Python and Flask for production systems',
+      'Built REST APIs for subscription workflows and automated bulk order generation pipelines using Firestore',
+      'Optimized Firestore queries, batch writes, and transactions for high-volume workloads improving system performance',
+      'Implemented structured error handling, logging, and failure recovery pipelines, reducing system failures by ∼ 25%',
+      'Built data archiving pipeline using Firestore batch operations, ensuring efficient cleanup and historical data retention',
     ],
     techStack: ['Python', 'Flask', 'Firebase', 'Google Cloud Platform (GCP)']
   },
   {
-    year: 'Jan 2026',
-    title: 'Software Developer Intern (Backend)',
-    company: 'Maity Innovations Pvt. Ltd.',
-    location: 'On-site, Durgapur, India',
-    icon: Briefcase,
-    achievements: [
-      'Collaborated with senior developers on a production-grade e-commerce backend in agile development cycles',
-      'Engineered cart and coupon engine handling 10+ validation rules with strict inventory consistency checks',
-      'Implemented MongoDB transactions to ensure atomic coupon redemption, eliminating duplicate usage',
-      'Developed and tested 20+ RESTful APIs and resolved critical authentication bugs, reducing 500 errors by ~40%'
-    ],
-    techStack: ['Node.js', 'TypeScript', 'Express.js', 'MongoDB', 'MySQL']
-  },
-  {
-    year: 'Nov 2025 - Jan 2026',
+    year: 'Dec 2025 - Jan 2026',
     title: 'Full Stack Developer Intern',
     company: 'Techxica Technology Pvt. Ltd.',
     location: 'Remote',
@@ -65,6 +52,21 @@ const experienceData = [
     ],
     techStack: ['React.js', 'TypeScript', 'Node.js', 'MongoDB', 'Tailwind CSS']
   }
+  {
+    year: 'Jun 2025 - Nov 2025',
+    title: 'Software Developer Intern (Backend)',
+    company: 'Maity Innovations Pvt. Ltd.',
+    location: 'On-site, Durgapur, India',
+    icon: Briefcase,
+    achievements: [
+      'Engineered scalable food ordering backend using Node.js, Express, MongoDB following modular MVC architecture',
+      'Implemented JWT authentication and RBAC securing 15+ protected endpoints across user and admin workflows',
+      'Designed cart and order workflows supporting dynamic pricing, quantity updates, and seamless checkout processing',
+      'Built coupon engine handling 10+ validation rules including expiry, limits, and per-user constraints',
+      'Developed and tested 20+ RESTful APIs and resolved critical authentication bugs, reducing 500 errors by ~40%'
+    ],
+    techStack: ['Node.js', 'TypeScript', 'Express.js', 'MongoDB', 'MySQL']
+  },
 ];
 
 export function AboutSection() {
