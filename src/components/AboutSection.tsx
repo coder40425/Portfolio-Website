@@ -34,7 +34,7 @@ const experienceData = [
       'Built REST APIs for subscription workflows and automated bulk order generation pipelines using Firestore',
       'Optimized Firestore queries, batch writes, and transactions for high-volume workloads improving system performance',
       'Implemented structured error handling, logging, and failure recovery pipelines, reducing system failures by ∼ 25%',
-      'Built data archiving pipeline using Firestore batch operations, ensuring efficient cleanup and historical data retention',
+      'Built data archiving pipeline using Firestore batch operations, ensuring efficient cleanup and historical data retention'
     ],
     techStack: ['Python', 'Flask', 'Firebase', 'Google Cloud Platform (GCP)']
   },
