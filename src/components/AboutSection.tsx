@@ -51,7 +51,7 @@ const experienceData = [
       'Optimized database queries and API responses, improving overall application performance by ~20%'
     ],
     techStack: ['React.js', 'TypeScript', 'Node.js', 'MongoDB', 'Tailwind CSS']
-  }
+  },
   {
     year: 'Jun 2025 - Nov 2025',
     title: 'Software Developer Intern (Backend)',
@@ -66,7 +66,7 @@ const experienceData = [
       'Developed and tested 20+ RESTful APIs and resolved critical authentication bugs, reducing 500 errors by ~40%'
     ],
     techStack: ['Node.js', 'TypeScript', 'Express.js', 'MongoDB', 'MySQL']
-  },
+  }
 ];
 
 export function AboutSection() {
