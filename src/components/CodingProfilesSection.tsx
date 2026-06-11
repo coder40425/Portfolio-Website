@@ -16,18 +16,18 @@ export function CodingProfilesSection() {
         { label: 'Days Active', value: '100+' }
       ]
     },
-    // {
-    //   name: 'CodeChef',
-    //   mainStat: '3★',
-    //   mainLabel: 'Current Rating',
-    //   link: 'https://www.codechef.com/users/yourusername',
-    //   gradient: 'from-amber-700 to-orange-600',
-    //   icon: Trophy,
-    //   stats: [
-    //     { label: 'Rating', value: '1600+' },
-    //     { label: 'Stars', value: '3 Star' }
-    //   ]
-    // }
+     {
+       name: 'CodeChef',
+       mainStat: '2★',
+       mainLabel: 'Current Rating',
+       link: 'https://www.codechef.com/users/coderx404x',
+       gradient: 'from-amber-700 to-orange-600',
+       icon: Trophy,
+       stats: [
+          { label: 'Rating', value: '1400+' },
+          { label: 'Stars', value: '2 Star' }
+       ]
+      }
   ];
 
   return (
