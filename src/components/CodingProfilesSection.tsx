@@ -5,9 +5,9 @@ import { Button } from './ui/button';
 export function CodingProfilesSection() {
   const platforms = [
     {
-      name: 'Codolio',
+      name: 'Codolio Profile',
       mainStat: '300+',
-      mainLabel: 'Problems Solved',
+      mainLabel: 'Total Problems Solved',
       link: 'https://codolio.com/profile/yashh2501',
       gradient: 'from-orange-500 to-red-500',
       icon: Code2,
