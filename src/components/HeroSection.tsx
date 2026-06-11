@@ -106,7 +106,7 @@ export function HeroSection() {
               className="space-y-2"
             >
               <p className="text-lg md:text-xl lg:text-2xl text-gray-300">
-                2nd Year Student at <span className="text-white">NIT Durgapur</span>
+                Pre-Final Year Student at <span className="text-white">NIT Durgapur</span>
               </p>
               <div className="text-base md:text-lg text-gray-400 min-h-[28px]">
                 {displayedText}

@@ -259,7 +259,7 @@ export function AboutSection() {
                   <h3 className="text-2xl text-white">My Journey</h3>
                 </div>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  I'm a 2nd-year student at NIT Durgapur specializing in full-stack development. I build scalable web applications and solve complex problems through code, turning ideas into production-ready solutions.
+                  I'm a Pre-Final year student at NIT Durgapur specializing in full-stack development. I build scalable web applications and solve complex problems through code, turning ideas into production-ready solutions.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
                   My work spans the entire stack from crafting intuitive React interfaces to designing robust Node.js backends. When I'm not building projects, you'll find me grinding LeetCode or experimenting with new technologies.
