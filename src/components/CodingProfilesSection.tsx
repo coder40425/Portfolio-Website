@@ -5,6 +5,18 @@ import { Button } from './ui/button';
 export function CodingProfilesSection() {
   const platforms = [
     {
+      name: 'Codolio',
+      mainStat: '300+',
+      mainLabel: 'Problems Solved',
+      link: 'https://codolio.com/profile/yashh2501',
+      gradient: 'from-orange-500 to-red-500',
+      icon: Code2,
+      stats: [
+        { label: 'Questions Solved', value: '300+' },
+        { label: 'Days Active', value: '200+' }
+      ]
+    },
+    {
       name: 'LeetCode',
       mainStat: '250+',
       mainLabel: 'Problems Solved',
@@ -12,8 +24,8 @@ export function CodingProfilesSection() {
       gradient: 'from-orange-500 to-yellow-500',
       icon: Code2,
       stats: [
-        { label: 'Questions Solved', value: '200+' },
-        { label: 'Days Active', value: '100+' }
+        { label: 'Questions Solved', value: '250+' },
+        { label: 'Days Active', value: '150+' }
       ]
     },
      {
